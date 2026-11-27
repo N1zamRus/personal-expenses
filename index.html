@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учёт расходов</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Учёт расходов</h1>
+    <form id="expense-form">
+      <label>Название <input name="title" required maxlength="200"></label>
+      <label>Сумма, ₽ <input name="amount" inputmode="decimal" required placeholder="Например, 125.50"></label>
+      <label>Категория <input name="category" required maxlength="200"></label>
+      <button type="submit">Добавить расход</button>
+    </form>
+    <p id="message" role="alert"></p>
+    <h2>Расходы</h2>
+    <ul id="expenses"></ul>
+    <p class="total">Итого: <strong id="total">0,00 ₽</strong></p>
+  </main>
+</body>
+</html>
